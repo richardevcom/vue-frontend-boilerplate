@@ -1,23 +1,33 @@
 {
   "name": "vue-frontend-boilerplate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --port 666",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^3.2.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.3",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "^4.5.11",
     "@vue/cli-service": "~4.5.0",
+    "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^5.0.0",
+    "postcss": "^7.0.35",
+    "sass-loader": "^10.1.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
+    "vue-inline-svg": "^2.0.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -35,8 +45,28 @@
     "rules": {}
   },
   "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "cover 99.9%",
+    "last 3 versions"
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "keywords": [
+    "vue",
+    "js",
+    "vuejs",
+    "front",
+    "end",
+    "frontend",
+    "boilerplate",
+    "starter",
+    "pack",
+    "scss",
+    "sass",
+    "inline",
+    "svg",
+    "tailwind",
+    "tailwindcss"
+  ],
+  "author": "richardev",
+  "license": "ISC"
 }

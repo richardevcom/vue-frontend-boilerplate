@@ -1,28 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div id="app">
+		<Nav />
+		<router-view class="flex justify-between flex-wrap p-6" />
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+	import Nav from "./components/Nav";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+	export default {
+		name: "App",
+		metaInfo: {
+			// if no subcomponents specify a metaInfo.title, this title will be used
+			title: "Vue Project",
+			// all titles will be injected into this template
+			titleTemplate: "%s | Vue",
+			htmlAttrs: {
+				lang: "en",
+			},
+			meta: [],
+		},
+		components: {
+			Nav,
+		},
+	};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
