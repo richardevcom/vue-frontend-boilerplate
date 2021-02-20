@@ -17,8 +17,16 @@ This project uses **<a href="https://github.com/browserslist/browserslist" targe
 ## Install
 
 ```
+npm i vue-frontend-boilerplate
+```
+
+or
+
+```
 git clone https://github.com/richardevcom/vue-frontend-boilerplate.git
 ```
+
+then
 
 ```
 npm install
